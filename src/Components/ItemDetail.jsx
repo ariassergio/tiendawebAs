@@ -1,8 +1,15 @@
+import { useContext, useState } from "react";
 import { toCapital } from "../helpers/toCapital";
 import ItemCount from "./ItemCount";
-import { useState } from "react";
+import { CartContext } from "../Context/CartContext";
+
+
 
 const ItemDetail = ({item}) => {
+
+    const { carrito, agregarAlCarrito } = useContext(CartContext);
+    
+
     const [cantidad, setCantidad] = useState(1);
 
     const handleRestar = () => {
@@ -12,22 +19,25 @@ const ItemDetail = ({item}) => {
     const handleSumar = () => {
         cantidad < item.stock && setCantidad(cantidad + 1)
     }
-    const handleAgregar = () => {
-        console.log ( {...item, cantidad});
-    } 
+    
     return (
         <div className="container">
-            <div className="product-detalle">
-                <img src= {item.image} alt= {item.name} />
-                <div>
-                    <h3 className="titulo"> {item.name} </h3>
-                    <p className="description"> {item.description} </p>
-                    <p className="categoria">Categoria: {toCapital(item.categorias)} </p>
-                    <p className="precio">$ {item.price} </p>
-                </div>
-                <ItemCount cantidad= {cantidad} handleSumar= {handleSumar} handleRestar= {handleRestar} handleAgregar= {handleAgregar} />
+        <div className="producto-detalle">
+            <img src={item.image} alt={item.name} />
+            <div>
+                <h3 className="titulo">{item.name}</h3>
+                <p className="descripcion">{item.description}</p>
+                <p className="categoria">Categoría: {toCapital(item.category)}</p>
+                <p className="precio">${item.price}</p>
+                <ItemCount
+                  cantidad={cantidad}
+                  handleSumar={handleSumar}
+                  handleRestar={handleRestar}
+                  handleAgregar={() => { agregarAlCarrito(item, cantidad) }}
+                />
             </div>
         </div>
+    </div>
     );
 };
 

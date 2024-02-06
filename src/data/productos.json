@@ -5,7 +5,7 @@
       "price": 10,
       "description": "Description for Product 1",
       "details": "Buzo de algodon blanco de la seleccion Argentina con las 3 estrellas",
-      "categorias": "Indumentaria",
+      "category": "Indumentaria",
       "image": "/imagenes/camisetaalgodon.jpg",
       "stock": 10
 
@@ -16,7 +16,7 @@
       "price": 20,
       "description": "Description for Product 2",
       "details": "Camiseta del dibu martinez con parche de campeon y las 3 estrellas",
-      "categorias": "Indumentaria",
+      "category": "Indumentaria",
       "image": "/imagenes/dibu.png",
       "stock": 15
     },
@@ -26,7 +26,7 @@
         "price": 20,
         "description": "Description for Product 2",
         "details": "Camiseta de Argentina titular con parche de campeon y las 3 estrellas",
-        "categorias": "Indumentaria",
+        "category": "Indumentaria",
         "image": "/imagenes/camisetatitular.png",
         "stock": 20
       },
@@ -36,7 +36,7 @@
         "price": 20,
         "description": "Description for Product 2",
         "details":"Camiseta de Argentina suplente usada en el partido vs Polonia",
-        "categorias": "Indumentaria",
+        "category": "Indumentaria",
         "image": "/imagenes/camisetasuplente.png",
         "stock": 20
       },
@@ -46,7 +46,7 @@
         "price": 20,
         "description": "Description for Product 2",
         "details": "Replica de la Copa del mundo",
-        "categorias": "Accesorios",
+        "category": "Accesorios",
         "image": "/imagenes/replicacopa.png",
         "stock": 10
       },
@@ -56,7 +56,7 @@
         "price": 20,
         "description": "Description for Product 2",
         "details": "Replica de medallas del campeon Qatar 2022",
-        "categorias": "Accesorios",
+        "category": "Accesorios",
         "image": "/imagenes/replicamedalla.png",
         "stock": 30
       },
@@ -66,7 +66,7 @@
         "price": 20,
         "description": "Description for Product 2",
         "details": "Album oficial de Qatar 2022",
-        "categorias": "Accesorios",
+        "category": "Accesorios",
         "image": "/imagenes/album.png",
         "stock": 10
       },
@@ -76,7 +76,7 @@
         "price": 20,
         "description": "Description for Product 2",
         "details": "Figuritas del mundial Qatar 2022",
-        "categorias": "Accesorios",
+        "category": "Accesorios",
         "image": "/imagenes/figuritas.png",
         "stock": 50
       },
@@ -86,7 +86,7 @@
         "price": 20,
         "description": "Description for Product 2",
         "details": "Remera homenaje a celebracion del dibu por entrega de premio al mejor arquero Qatar 2022",
-        "categorias": "Indumentaria",
+        "category": "Indumentaria",
         "image": "/imagenes/remeradibu.png",
         "stock": 10
       },
@@ -96,7 +96,7 @@
         "price": 20,
         "description": "Description for Product 2",
         "details": "Pelota oficial Qatar 2022",
-        "categorias": "Accesorios",
+        "category": "Accesorios",
         "image": "/imagenes/pelota.jpeg",
         "stock": 5
       }
