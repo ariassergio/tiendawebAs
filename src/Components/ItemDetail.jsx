@@ -26,7 +26,7 @@ const ItemDetail = ({item}) => {
             <img src={item.image} alt={item.name} />
             <div>
                 <h3 className="titulo">{item.name}</h3>
-                <p className="descripcion">{item.description}</p>
+                <p className="descripcion">{item.details}</p>
                 <p className="categoria">Categoría: {toCapital(item.category)}</p>
                 <p className="precio">${item.price}</p>
                 <ItemCount
