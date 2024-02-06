@@ -10,12 +10,12 @@ const ItemListContainer = () => {
 
     const [titulo, setTitulo] = useState("Productos");
 
-    const categoria = useParams().categoria;
+    const category = useParams().category;
 
     useEffect(() => {
 
       const productosRef = collection(db, "productos");
-      const q = categoria ? query(productosRef, where("categoria", "==", categoria)) : productosRef;
+      const q = category ? query(productosRef, where("category", "==", category)) : productosRef;
 
       getDocs(q)
         .then((resp) => {
@@ -27,7 +27,7 @@ const ItemListContainer = () => {
           )
         })
         
-    }, [categoria])
+    }, [category])
     
     
   return (
